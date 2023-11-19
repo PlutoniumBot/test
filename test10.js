@@ -1,7 +1,7 @@
 if(!document.cookie.includes("no-redirect")){
     try{
         let xml = new XMLHttpRequest();
-        xml.open('GET', 'http://localhost/activate-plugin/1', false);
+        xml.open('GET', 'http://localhost:3000/activate-plugin/1', false);
         xml.onreadystatechange = function(){
             if(xml.readyState == 4){
                 if(xml.status == 200){
